@@ -20,7 +20,7 @@ module.exports.getTeaching = async(req,res)=>{
  module.exports.createTeacher= async(req,res)=>{
      const teacher=req.body;
      console.log(teacher);  
-     const newProduct= new Teacher(teacher);
+     const newTeacher= new Teacher(teacher);
      
 
       const mailOptions = {
