@@ -1,4 +1,4 @@
-const Teacher=('../../models/teaching');
+const Teacher=require('../../models/teaching');
 const transporter=require('../../config/nodemailer');
 
 
@@ -20,7 +20,7 @@ module.exports.getTeaching = async(req,res)=>{
  module.exports.createTeacher= async(req,res)=>{
      const teacher=req.body;
      console.log(teacher);  
-     const newTeacher= new Teacher(teacher);
+     const newProduct= new Teacher(teacher);
      
 
       const mailOptions = {
